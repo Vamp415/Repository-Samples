@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Integration Guide - Think Pixel</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        code {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 0.2rem 0.5rem;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+        }
+        pre {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 1rem;
+            border-radius: 10px;
+            overflow-x: auto;
+        }
+        h1, h2 {
+            color: #fff;
+        }
+        .step {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔗 Footer Integration Guide</h1>
+        <p>This guide shows how to add the branded footer with social links to any portfolio page.</p>
+
+        <div class="step">
+            <h2>📋 Step 1: Copy the Footer HTML</h2>
+            <p>Copy the content from <code>shared-footer.html</code> and paste it before the closing <code>&lt;/body&gt;</code> tag in your portfolio page.</p>
+        </div>
+
+        <div class="step">
+            <h2>🎨 Step 2: Add SEO Meta Tags</h2>
+            <p>For each portfolio page, add these SEO meta tags in the <code>&lt;head&gt;</code> section:</p>
+            <pre><code>&lt;!-- SEO Meta Tags --&gt;
+&lt;title&gt;Portfolio #X - [Description] | Hardik Saxena | Think Pixel&lt;/title&gt;
+&lt;meta name="description" content="[Portfolio description] by Hardik Saxena..."&gt;
+&lt;meta name="keywords" content="Hardik Saxena, Think Pixel, Portfolio Design..."&gt;
+&lt;meta name="author" content="Hardik Saxena"&gt;
+&lt;meta name="robots" content="index, follow"&gt;
+&lt;link rel="canonical" href="https://hardik.thinkpixel.org/[folder-number]/" /&gt;
+
+&lt;!-- Open Graph Meta Tags --&gt;
+&lt;meta property="og:type" content="website"&gt;
+&lt;meta property="og:url" content="https://hardik.thinkpixel.org/[folder-number]/"&gt;
+&lt;meta property="og:title" content="Portfolio #X - [Description] | Hardik Saxena"&gt;
+&lt;meta property="og:description" content="[Portfolio description]..."&gt;
+&lt;meta property="og:image" content="https://hardik.thinkpixel.org/assets/portfolio-[x]-preview.jpg"&gt;
+&lt;meta property="og:site_name" content="Think Pixel"&gt;
+
+&lt;!-- Twitter Card Meta Tags --&gt;
+&lt;meta name="twitter:card" content="summary_large_image"&gt;
+&lt;meta name="twitter:creator" content="@hardiks57184721"&gt;
+&lt;meta name="twitter:title" content="Portfolio #X - [Description] | Hardik Saxena"&gt;
+&lt;meta name="twitter:description" content="[Portfolio description]..."&gt;
+&lt;meta name="twitter:image" content="https://hardik.thinkpixel.org/assets/portfolio-[x]-preview.jpg"&gt;
+
+&lt;!-- Favicon --&gt;
+&lt;link rel="icon" type="image/x-icon" href="../favicon.ico"&gt;
+&lt;link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png"&gt;</code></pre>
+        </div>
+
+        <div class="step">
+            <h2>🔄 Step 3: Update Navigation Links</h2>
+            <p>Make sure navigation links point back to the main site:</p>
+            <pre><code>&lt;a href="../index.html#home"&gt;Home&lt;/a&gt;
+&lt;a href="../index.html#projects"&gt;Projects&lt;/a&gt;
+&lt;a href="../index.html#about"&gt;About&lt;/a&gt;
+&lt;a href="../index.html#contact"&gt;Contact&lt;/a&gt;</code></pre>
+        </div>
+
+        <div class="step">
+            <h2>📱 Step 4: Add Accessibility Features</h2>
+            <p>Include proper ARIA labels and semantic HTML:</p>
+            <pre><code>&lt;nav role="navigation" aria-label="Portfolio navigation"&gt;
+&lt;main role="main"&gt;
+&lt;img src="..." alt="Descriptive alt text"&gt;
+&lt;a href="..." aria-label="Descriptive link purpose"&gt;</code></pre>
+        </div>
+
+        <div class="step">
+            <h2>✅ Step 5: Test Integration</h2>
+            <ul>
+                <li>✅ Check all social links work correctly</li>
+                <li>✅ Verify meta tags are properly formatted</li>
+                <li>✅ Test responsive design on mobile</li>
+                <li>✅ Validate HTML and accessibility</li>
+                <li>✅ Test social media previews</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <h2>🎯 Portfolio-Specific Customizations</h2>
+            <p>For each portfolio (1-7), customize these elements:</p>
+            <ul>
+                <li><strong>Title:</strong> Portfolio #1, Portfolio #2, etc.</li>
+                <li><strong>Description:</strong> Unique description for each design</li>
+                <li><strong>Keywords:</strong> Add specific technologies used</li>
+                <li><strong>Images:</strong> Create preview images for each portfolio</li>
+                <li><strong>Canonical URL:</strong> Update folder number in URL</li>
+            </ul>
+        </div>
+
+        <h2>🚀 All Social Links Included:</h2>
+        <ul>
+            <li>🌐 <strong>Portfolio:</strong> https://hardik.thinkpixel.org/</li>
+            <li>💼 <strong>LinkedIn:</strong> https://www.linkedin.com/in/hardik-saxena-77b354271</li>
+            <li>🐙 <strong>GitHub:</strong> https://github.com/Vamp415</li>
+            <li>💬 <strong>Discord:</strong> https://discord.gg/NKj5jRrTjP</li>
+            <li>🕊️ <strong>X (Twitter):</strong> https://x.com/hardiks57184721?s=21</li>
+            <li>📷 <strong>Instagram:</strong> https://www.instagram.com/og.vamp</li>
+            <li>☕ <strong>Buy Me a Coffee:</strong> https://buymeacoffee.com/vamp415</li>
+            <li>🔗 <strong>Topmate:</strong> https://topmate.io/hardik_saxena_001</li>
+        </ul>
+
+        <p style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.2);">
+            <strong>Made by Hardik Saxena @ Think Pixel</strong><br>
+            <em>Where Creativity Meets Security</em> 🚀
+        </p>
+    </div>
+</body>
+</html>

@@ -3,64 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Showcase | OG VAMP</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Hardik Saxena | Full Stack Developer | Think Pixel</title>
+    <meta name="description" content="Hardik Saxena — Full Stack Developer, Founder of Think Pixel. Building secure, creative, and scalable digital experiences blending design with cybersecurity.">
+    <meta name="keywords" content="Hardik Saxena, Think Pixel, Full Stack Developer, Web Developer, Cybersecurity, React Developer, Frontend Engineer, Portfolio, Resume, Projects, AI Developer">
+    <meta name="author" content="Hardik Saxena">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://hardik.thinkpixel.org/" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hardik.thinkpixel.org/">
+    <meta property="og:title" content="Hardik Saxena | Full Stack Developer | Think Pixel">
+    <meta property="og:description" content="Full Stack Developer specializing in secure, scalable web applications. Founder of Think Pixel - where creativity meets cybersecurity.">
+    <meta property="og:image" content="https://hardik.thinkpixel.org/assets/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Think Pixel">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://hardik.thinkpixel.org/">
+    <meta name="twitter:title" content="Hardik Saxena | Full Stack Developer | Think Pixel">
+    <meta name="twitter:description" content="Full Stack Developer specializing in secure, scalable web applications. Founder of Think Pixel - where creativity meets cybersecurity.">
+    <meta name="twitter:image" content="https://hardik.thinkpixel.org/assets/og-image.jpg">
+    <meta name="twitter:creator" content="@hardiks57184721">
+    <meta name="twitter:site" content="@hardiks57184721">
+    
+    <!-- Favicon and Icons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#667eea">
+    <meta name="msapplication-TileColor" content="#667eea">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
     <link rel="stylesheet" href="style.css">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Hardik Saxena",
+      "url": "https://hardik.thinkpixel.org/",
+      "image": "https://hardik.thinkpixel.org/assets/profile.jpg",
+      "sameAs": [
+        "https://www.linkedin.com/in/hardik-saxena-77b354271",
+        "https://github.com/Vamp415",
+        "https://x.com/hardiks57184721",
+        "https://www.instagram.com/og.vamp",
+        "https://topmate.io/hardik_saxena_001"
+      ],
+      "jobTitle": "Full Stack Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Think Pixel",
+        "url": "https://thinkpixel.org/"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Computer Science"
+      },
+      "knowsAbout": [
+        "Full Stack Development",
+        "React",
+        "JavaScript",
+        "Cybersecurity",
+        "Web Development",
+        "Frontend Engineering",
+        "AI Development"
+      ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Think Pixel",
+      "url": "https://thinkpixel.org/",
+      "logo": "https://hardik.thinkpixel.org/assets/think-pixel-logo.png",
+      "founder": {
+        "@type": "Person",
+        "name": "Hardik Saxena"
+      },
+      "description": "Digital agency specializing in secure, creative, and scalable web solutions",
+      "sameAs": [
+        "https://github.com/Vamp415",
+        "https://www.linkedin.com/in/hardik-saxena-77b354271"
+      ]
+    }
+    </script>
+    
+    <!-- Google Analytics (Replace GA_MEASUREMENT_ID with actual ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
 </head>
 <body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h2>OG VAMP</h2>
-                <span>Portfolio Showcase</span>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Hardik Saxena</h2>
+                    <span>Think Pixel</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#home" aria-label="Go to Home section">Home</a>
+                    <a href="#projects" aria-label="View Projects">Projects</a>
+                    <a href="#about" aria-label="About Hardik">About</a>
+                    <a href="#contact" aria-label="Contact Information">Contact</a>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-            <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#projects">Projects</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>Portfolio Collection</h1>
-                <h2>Showcasing <span class="highlight">7 Unique Designs</span></h2>
-                <p>Explore my collection of personal portfolio websites, each with its own unique design and functionality. From minimalist layouts to feature-rich interfaces.</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn primary">View Projects</a>
-                    <a href="#about" class="btn secondary">Learn More</a>
+    <main id="main-content">
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hardik Saxena</h1>
+                    <h2>Full Stack Developer & <span class="highlight">Cybersecurity Enthusiast</span></h2>
+                    <p>Founder of Think Pixel, building secure, creative, and scalable digital experiences. Specializing in React, AI development, and modern web technologies with a focus on cybersecurity best practices.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn primary" aria-label="View my projects">View Projects</a>
+                        <a href="#about" class="btn secondary" aria-label="Learn more about me">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-cards">
+                        <div class="card-mini card-1"></div>
+                        <div class="card-mini card-2"></div>
+                        <div class="card-mini card-3"></div>
+                    </div>
                 </div>
             </div>
-            <div class="hero-visual">
-                <div class="floating-cards">
-                    <div class="card-mini card-1"></div>
-                    <div class="card-mini card-2"></div>
-                    <div class="card-mini card-3"></div>
-                </div>
-            </div>
-        </div>
         <div class="scroll-indicator">
             <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
-                <h2>Portfolio Collection</h2>
-                <p>Each portfolio represents a different approach to web design and user experience</p>
-            </div>
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Projects</h2>
+                    <p>Showcasing innovative web solutions that blend creativity with security, built with modern technologies</p>
+                </div>
             
             <div class="projects-grid">
                 <!-- Portfolio #01 -->
@@ -269,45 +379,53 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>About This Collection</h2>
-                    <p>This showcase presents seven different approaches to personal portfolio design. Each portfolio demonstrates unique design principles, technologies, and user experience considerations.</p>
-                    <div class="stats">
-                        <div class="stat">
-                            <h3>7</h3>
-                            <p>Portfolio Designs</p>
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>About Hardik Saxena</h2>
+                        <p>Full Stack Developer and Founder of Think Pixel, passionate about creating secure, scalable, and innovative digital solutions. With expertise in React, cybersecurity, and AI development, I bridge the gap between creative design and robust security practices.</p>
+                        <div class="stats">
+                            <div class="stat">
+                                <h3>5+</h3>
+                                <p>Years Experience</p>
+                            </div>
+                            <div class="stat">
+                                <h3>50+</h3>
+                                <p>Projects Completed</p>
+                            </div>
+                            <div class="stat">
+                                <h3>100%</h3>
+                                <p>Client Satisfaction</p>
+                            </div>
                         </div>
-                        <div class="stat">
-                            <h3>100%</h3>
-                            <p>Responsive</p>
-                        </div>
-                        <div class="stat">
-                            <h3>Modern</h3>
-                            <p>Technologies</p>
-                        </div>
-                    </div>
                 </div>
                 <div class="about-visual">
                     <div class="tech-stack">
                         <div class="tech-item">
-                            <i class="fab fa-html5"></i>
-                            <span>HTML5</span>
-                        </div>
-                        <div class="tech-item">
-                            <i class="fab fa-css3-alt"></i>
-                            <span>CSS3</span>
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
                         </div>
                         <div class="tech-item">
                             <i class="fab fa-js-square"></i>
                             <span>JavaScript</span>
                         </div>
                         <div class="tech-item">
-                            <i class="fas fa-mobile-alt"></i>
-                            <span>Responsive</span>
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Cybersecurity</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-brain"></i>
+                            <span>AI Development</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
                         </div>
                     </div>
                 </div>
@@ -315,44 +433,77 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-content">
-                <h2>Get In Touch</h2>
-                <p>Interested in collaborating or have questions about these portfolio designs?</p>
-                <div class="contact-links">
-                    <a href="#" class="contact-link">
-                        <i class="fas fa-envelope"></i>
-                        <span>Email</span>
-                    </a>
-                    <a href="#" class="contact-link">
-                        <i class="fab fa-github"></i>
-                        <span>GitHub</span>
-                    </a>
-                    <a href="#" class="contact-link">
-                        <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="#" class="contact-link">
-                        <i class="fab fa-twitter"></i>
-                        <span>Twitter</span>
-                    </a>
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <h2>Let's Connect</h2>
+                    <p>Ready to build something amazing together? Let's discuss your next project or connect for mentorship opportunities.</p>
+                    <div class="contact-links">
+                        <a href="https://hardik.thinkpixel.org/" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Visit Hardik's portfolio website">
+                            <i class="fas fa-globe"></i>
+                            <span>Portfolio</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hardik-saxena-77b354271" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Connect on LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/Vamp415" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="View GitHub profile">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://discord.gg/NKj5jRrTjP" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Join Discord community">
+                            <i class="fab fa-discord"></i>
+                            <span>Discord</span>
+                        </a>
+                        <a href="https://x.com/hardiks57184721?s=21" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Follow on X (Twitter)">
+                            <i class="fab fa-x-twitter"></i>
+                            <span>X (Twitter)</span>
+                        </a>
+                        <a href="https://www.instagram.com/og.vamp" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Follow on Instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://buymeacoffee.com/vamp415" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Support on Buy Me a Coffee">
+                            <i class="fas fa-coffee"></i>
+                            <span>Buy Me a Coffee</span>
+                        </a>
+                        <a href="https://topmate.io/hardik_saxena_001" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Book 1:1 mentorship session">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Topmate</span>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-left">
-                    <h3>OG VAMP</h3>
-                    <p>Portfolio Showcase Collection</p>
+                    <h3>Hardik Saxena</h3>
+                    <p>Think Pixel - Creative Digital Solutions</p>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/hardik-saxena-77b354271" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Vamp415" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://x.com/hardiks57184721?s=21" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/og.vamp" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="footer-right">
-                    <p>&copy; 2024 OG VAMP. All rights reserved.</p>
+                    <p>&copy; 2024 Hardik Saxena. All rights reserved.</p>
+                    <p>Made by Hardik Saxena @ Think Pixel</p>
                 </div>
             </div>
         </div>
